@@ -1,0 +1,25 @@
+{
+  "name": "tichu",
+  "version": "1.0.0",
+  "description": "tunge sorewa o tichu no geimo",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tungero/Tichu.git"
+  },
+  "author": "Tungero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tungero/Tichu/issues"
+  },
+  "homepage": "https://github.com/Tungero/Tichu#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20",
+    "path": "^0.12.7"
+  }
+}
