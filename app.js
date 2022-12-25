@@ -1,13 +1,17 @@
 const express = require('express')
 const app = express();
 
-const server = require('http').Server(app);
+const port = process.env.PORT || 3000;
+
+const connection = (port == 3000) ? 'http' : 'https'
+
+const server = require(connection).Server(app);
 const io = require('socket.io')(server);
 
 const path = require('path')
 const bodyParser = require('body-parser');
 
-const port = process.env.PORT || 3000;
+
 
 
 app.set("view engine", "ejs");
