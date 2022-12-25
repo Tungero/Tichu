@@ -11,7 +11,9 @@ router.get("/", (req, res) => {
 });
 
 router.get("/room", (req, res) => {
-    res.redirect(`/room/${uuidV4()}`)
+    var id = uuidV4();
+    console.log(`client uuid = ${id}`)
+    res.redirect(`/room/${id}`)
 })
 router.get("/room/:roomID", (req, res) => {
     res.render('room', {roomId: req.params.roomID});
