@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        .testbutton {
+            background-color: #FF00FF;
+        }
+    </style>
     <link rel="stylesheet" href="kokot.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,5 +20,8 @@
 </head>
 <body>
     room?
+    <button id="testbutton" onclick="toggleButton(this, true)">Im a button!</button>
+    <p>players in lobby: </p>
+    <p id="count"></p>
 </body>
 </html>

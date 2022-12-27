@@ -23,5 +23,9 @@ io.on('connection', socket => {
     socket.on('join-room', (roomId, userId) => {
         socket.join(roomId)
         socket.to(roomId).emit('user-connected', userId)
+    });
+    socket.on('toggleApi', (roomId) => {
+        socket.join(roomId)
+        socket.to(roomId).emit('toggleFrontend')
     })
 })
